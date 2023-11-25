@@ -191,7 +191,7 @@ export const CompanionForm = ({
             <div>
               <h3 className="text-lg font-medium">Configuration</h3>
               <p className="text-sm text-muted-foreground">
-                Detailed instructions for AI's Behaviour
+                Detailed instructions for AI Behaviour
               </p>
             </div>
             <Separator className="bg-primary/10" />
@@ -222,7 +222,7 @@ export const CompanionForm = ({
                   <Textarea disabled={isLoading} rows={7} className="bg-background resize-none" placeholder={SEED_CHAT} {...field} />
                 </FormControl>
                 <FormDescription>
-                  Write couple of examples of a human chatting with your AI companion, write expected answers.
+                  Write couple of examples of a human chatting with your AI Companion, write expected answers.
                 </FormDescription>
                 <FormMessage />
               </FormItem>
