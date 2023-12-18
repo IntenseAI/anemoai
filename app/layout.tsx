@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { ClerkProvider } from '@clerk/nextjs'
+import { ClerkProvider, RedirectToSignIn } from '@clerk/nextjs'
 
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from '@/components/theme-provider'
@@ -23,13 +23,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider afterSignInUrl='/dashboard' afterSignUpUrl='/dashboard'>
       <html lang="en" suppressHydrationWarning>
         <body className={cn("bg-secondary", inter.className)}>
           <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
             <ProModal />
             {children}
             <Toaster />
+            {/* <RedirectToSignIn afterSignInUrl='/dashboard' afterSignUpUrl='/dashboard' /> */}
           </ThemeProvider>
           <Analytics />
         </body>
