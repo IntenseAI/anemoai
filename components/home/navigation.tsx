@@ -16,10 +16,10 @@ export default function Navbar() {
                 {isSignedIn ? <>
                     <button className="px-8 py-3 btn_gradient"><Link href="/dashboard">Dashboard</Link></button>
                 </>:<>
-                        <SignInButton className="px-8 py-3 btn" afterSignInUrl='/dashboard' afterSignUpUrl='/dashboard'>
+                        <SignInButton afterSignInUrl='/dashboard' afterSignUpUrl='/dashboard'>
                             Sign in
                         </SignInButton>
-                        <SignUpButton className="px-8 py-3 btn" afterSignInUrl='/dashboard' afterSignUpUrl='/dashboard'>
+                        <SignUpButton afterSignInUrl='/dashboard' afterSignUpUrl='/dashboard'>
                             Sign up
                         </SignUpButton>
                 </>}
