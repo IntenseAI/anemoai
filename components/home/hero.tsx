@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Navbar from "./navbar";
-import GetStarted from "./getStarted";
+
 
 export default function Hero() {
   return (
@@ -13,7 +13,7 @@ export default function Hero() {
             Increase your productivity, Elevate your learning experience with
             the most comprehensive and powerful AI tools.
           </p>
-          <GetStarted/>
+          
           <div className="flex items-center gap-3 pt-10 lg:pt-40 pb-10">
             <div className="flex items-center">
               <div className="">
