@@ -41,7 +41,7 @@ export async function GET() {
       line_items: [
         {
           price_data: {
-            currency: "",
+            currency: "USD",
             product_data: {
               name: "ANEMO AI Companion Pro",
               description: "Create Custom AI Companions"
