@@ -55,7 +55,7 @@ export async function POST(
     const companionKey = {
       companionName: name!,
       userId: user.id,
-      modelName: "meta/llama-2-70b-chat",
+      modelName: "llama-2-70b-chat",
     };
     const memoryManager = await MemoryManager.getInstance();
 
