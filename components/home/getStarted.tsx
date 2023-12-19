@@ -1,16 +1,15 @@
 "use client";
 import Link from "next/link";
-import ScrollLink from "./scrollLink";
 import { useUser } from '@clerk/nextjs';
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
+import { SignInButton } from "@clerk/nextjs";
 
 
-export default function GetStarted() {
+export default function Navbar() {
     const user = useUser();
     const { isSignedIn, isLoaded } = user;
   
   return (
-    <div className="hidden lg:flex gap-8">
+    <div>
         {
             isLoaded && <>
                 {isSignedIn ? <>
