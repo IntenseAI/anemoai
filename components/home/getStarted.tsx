@@ -6,8 +6,8 @@ import { SignInButton, SignUpButton } from "@clerk/nextjs";
 
 
 export default function getStarted() {
-  const user = useUser();
-  const { isSignedIn, isLoaded } = user;
+    const user = useUser();
+    const { isSignedIn, isLoaded } = user;
   
   return (
     <div className="hidden lg:flex gap-8">
