@@ -5,7 +5,7 @@ import { useUser } from '@clerk/nextjs';
 import { SignInButton, SignUpButton } from "@clerk/nextjs";
 
 
-export default function getStarted() {
+export default function GetStarted() {
     const user = useUser();
     const { isSignedIn, isLoaded } = user;
   
